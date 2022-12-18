@@ -1,0 +1,27 @@
+@import 'default';
+@import 'colors';
+@import 'mixin';
+
+h1{
+    @include font(900);
+}
+h4{
+    @include font(700);
+}
+p{
+    @include font(400);
+}
+.btn.main{
+    @include btn($main);
+    
+    &:hover{
+        @include activeBtn($main);
+    }
+}
+.btn.second{
+    @include btn($second);
+    
+    &:hover{
+        @include activeBtn($second);
+    }
+}
